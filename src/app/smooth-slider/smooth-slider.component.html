@@ -1,0 +1,8 @@
+<div class="slider-container">
+  <div #Container class="slider-container__inner">
+    <div class="slider-elements-container" [ngStyle]="{width: elementsWidth + 'px', transform: 'translateX(' + currentScrollPosition + 'px)'}">
+      <ng-content></ng-content>
+    </div>
+    <app-slider-controls (controlClick)="onControlClick($event)"></app-slider-controls>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.slider-chevron {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &__left {
+    left: 10px;
+  }
+
+  &__right {
+    right: 10px;
+  }
+}

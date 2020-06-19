@@ -1,0 +1,15 @@
+.placeholder {
+  background-color: #fff;
+  border: 1px solid green;
+  height: 300px;
+  padding: 8px;
+  width: 500px;
+  position: relative;
+
+  > canvas {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

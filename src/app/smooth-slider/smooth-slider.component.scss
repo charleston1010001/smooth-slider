@@ -1,0 +1,15 @@
+.slider {
+  &-container {
+
+    &__inner {
+      overflow-x: hidden;
+      padding: 35px 45px;
+      position: relative;
+    }
+  }
+
+  &-elements-container {
+    transition: transform .5s ease-in-out;
+    will-change: transform;
+  }
+}

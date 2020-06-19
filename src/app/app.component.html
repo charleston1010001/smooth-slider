@@ -1,0 +1,13 @@
+<div role="main">
+  <app-smooth-slider [numberOfScrolledElements]="1">
+    <!--<div appSliderElement [hoverScaleFactor]="1.2" class="placeholder" *ngFor="let chart of arr">Hello World {{chart}}</div>-->
+    <div appSliderElement [hoverScaleFactor]="1.2" class="placeholder" *ngFor="let chart of chartArray; let i = index"><canvas [id]="'chart-' + i"></canvas></div>
+  </app-smooth-slider>
+  <hr/>
+
+  <!--<div style="width: 500px; height: 300px">
+    <canvas id="chart-0" width="400" height="200"></canvas>
+  </div>
+  <canvas id="chart-1" width="400" height="200"></canvas>
+  <canvas id="chart-2" width="400" height="200"></canvas>-->
+</div>
